@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Comments list on jQuery</title>
+	<link rel="stylesheet" href="styles/main.css" />
+	<link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+	<div class="fixed-container clearfix">
+		<section class="section-left clearfix">
+			<div class="comments__content">
+				<h1 class="comments__title">Список дел:</h1>
+
+				<p class="comments__none js-comments__none">Список пуст...</p>
+
+				<ul class="comments__list list-reset js-comments__list"></ul>
+			</div>
+		</section>
+		<section class="section-right clearfix">
+			<div class="comments__form__title clearfix">
+				<h2 class="add-case">Добавить новое дело</h2>
+
+				<div class="comments__form">
+					<label class="comments__name">
+						<span class="comments__name-span">* Название</span>
+						<input class="comments__name-input js-comments__name-input" type="text" name="title" />
+					</label>
+
+					<label class="comments__label">
+						<span class="comments__label-span">* Описание</span>
+						<textarea class="comments__label-textarea js-comments__label-textarea"
+							name="message"></textarea>
+					</label>
+					<button class="comments__form-button js-comments__form-button" type="submit">
+						Добавить дело
+					</button>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="/js/jquery-3.4.1.min.js"></script>
+	<script src="/js/common.js"></script>
+	<!-- <script src="/js/main.js"></script> -->
+</body>
+
+</html>
